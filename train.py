@@ -98,12 +98,12 @@ if __name__ == '__main__':
     parser.add_argument('--onGPU', action='store_true', help='use GPU if available')
     parser.add_argument('--max_epochs', type=int, default=100, help='Max. number of epochs')
     parser.add_argument('--num_workers', type=int, default=8, help='No. of parallel threads')
-    parser.add_argument('--batch_size', type=int, default=16, help='Batch size. 12 for ESPNet-C and 6 for ESPNet. '
+    parser.add_argument('--batch_size', type=int, default=270, help='Batch size. 12 for ESPNet-C and 6 for ESPNet. '
                                                                    'Change as per the GPU memory')
     parser.add_argument('--step_loss', type=int, default=100, help='Decrease learning rate after how many epochs.')
     parser.add_argument('--lr', type=float, default=5e-4, help='Initial learning rate')
     parser.add_argument('--savedir', default='./test_', help='directory to save the results')
-    parser.add_argument('--resume', type=str, default='', help='Use this flag to load last checkpoint for training')
+    parser.add_argument('--resume', type=str, default='./test_', help='Use this flag to load last checkpoint for training')
     parser.add_argument('--pretrained', default='', help='Pretrained ESPNetv2 weights.')
 
     train_net(parser.parse_args())
