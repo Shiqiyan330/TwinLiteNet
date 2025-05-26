@@ -1,0 +1,18 @@
+elephant==0.12.0
+joblib==1.2.0
+matplotlib==3.7.1
+numpy==1.24.3
+opencv-python==4.7.0.72
+Pillow==9.5.0
+PyYAML
+scikit-learn==1.2.2 # Easily being attacked by CVE-2024-5026
+scipy==1.10.1
+# sklearn==0.0.post5 # Depelicated
+torch
+torchelastic
+torchaudio
+torchtext
+torchvision
+webcolors==1.13
+yacs==0.1.8
+zipp==3.15.0 # Easily being attacked by CVE-2024-5569
