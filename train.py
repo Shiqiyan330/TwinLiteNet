@@ -103,7 +103,7 @@ if __name__ == '__main__':
     parser.add_argument('--step_loss', type=int, default=100, help='Decrease learning rate after how many epochs.')
     parser.add_argument('--lr', type=float, default=5e-4, help='Initial learning rate')
     parser.add_argument('--savedir', default='./test_', help='directory to save the results')
-    parser.add_argument('--resume', type=str, default='./test_', help='Use this flag to load last checkpoint for training')
+    parser.add_argument('--resume', type=str, default='./test_/checkpoint.pth.tar', help='Use this flag to load last checkpoint for training')
     parser.add_argument('--pretrained', default='', help='Pretrained ESPNetv2 weights.')
 
     train_net(parser.parse_args())

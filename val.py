@@ -49,7 +49,7 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('--weight', default="pretrained/best.pth")
     parser.add_argument('--num_workers', type=int, default=12, help='No. of parallel threads')
-    parser.add_argument('--batch_size', type=int, default=16, help='Batch size. 12 for ESPNet-C and 6 for ESPNet. '
+    parser.add_argument('--batch_size', type=int, default=270, help='Batch size. 12 for ESPNet-C and 6 for ESPNet. '
                                                                    'Change as per the GPU memory')
 
     validation(parser.parse_args())
